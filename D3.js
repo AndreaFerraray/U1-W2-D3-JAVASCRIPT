@@ -1,3 +1,5 @@
+const { reduce } = require("d3-array");
+
 const starWarsCharacters = [
   {
     name: "Luke Skywalker",
@@ -111,17 +113,29 @@ console.log(characters);
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "starWarsCharacters" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */ let i = name;
-for (let i = 0; (i = name); i++) {
-  console.log(StarWarsCharacters[i].name);
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  console.log(starWarsCharacters[i].name);
+  characters.push(starWarsCharacters[i].name);
 }
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
-*/
+*/ const femaleCharacters = [];
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
+const eyeColor ={ 
+  blue :'[]',
+  yellow :'[]',
+  brown:'[]',
+  red:'[]',
+  blue-gray:'[]',
+  console.log(eyeColor.blue);
+};
+
+
+  
 
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
